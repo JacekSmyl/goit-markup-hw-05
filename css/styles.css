@@ -27,6 +27,10 @@ body {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   color: #212121;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+  
 }
 .link-item {
   text-decoration: none;
@@ -35,6 +39,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color, fill;
+  
+
 }
 .link-item:hover,
 .link-item:hover svg {
@@ -47,7 +56,11 @@ body {
   fill: #757575;
   margin-right: 10px;
   margin-left: 30px;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition: color;
 }
+
 
 .link:focus,
 .link:hover {
@@ -63,7 +76,7 @@ body {
 .section-background {
   background: #2f303a;
 }
-.section-backround-item{
+.section-backround-item {
   background: #f5f4fa;
 }
 .background-image {
@@ -169,12 +182,17 @@ body {
   font-size: 26px;
   line-height: 1.192;
   color: #2196f3;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
 }
 .logo-item {
   font-family: "Oleo Script", sans-serif;
   font-size: 26px;
   line-height: 1.192;
   color: #ffffff;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .logo-header {
@@ -182,6 +200,8 @@ body {
   font-size: 26px;
   line-height: 1.38;
   color: black;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 address {
@@ -218,6 +238,9 @@ address {
   font-size: 16px;
   line-height: 26px;
   margin-left: 8px;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color, background-color;
 }
 .buttons:focus,
 .buttons:hover {
@@ -255,6 +278,9 @@ address {
 }
 .box-shadow {
   margin-bottom: 30px;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: box-shadow;
 }
 .box-shadow:hover {
   cursor: pointer;
@@ -277,6 +303,7 @@ address {
 .flex-boxes {
   align-items: center;
   padding-left: 0px;
+
 }
 .container {
   width: 1200px;
@@ -304,7 +331,6 @@ address {
   padding-bottom: 94px;
   padding-top: 94px;
   padding-left: 0px;
-  
 }
 .style-padding {
   padding-bottom: 94px;
@@ -329,6 +355,8 @@ address {
 .icon-team {
   width: 20px;
   height: 20px;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .icons-box {
   display: inline-flex;
@@ -345,9 +373,12 @@ address {
   cursor: pointer;
 }
 
-.icon-castomers {
+.icon-customers {
   display: flex;
   fill: #afb1b8;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill,;
 }
 
 .icons-background {
@@ -407,10 +438,12 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
 }
 .icon-footer-item:hover {
-  background: #2196f3;
-  
+  background-color: #2196f3;
 }
 
 .flex-footer {
@@ -431,4 +464,34 @@ address {
 }
 .footer-position-item {
   margin-left: 70px;
+}
+.label{
+position: absolute;
+top: 0;
+right: 0;
+color: red;
+width: 370px;
+height: 70px;
+background: rgba(47, 48, 58, 0.8);
+margin: 0px;
+top: 224px;
+text-align: center;
+padding-top: 27px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.label-position{
+  position: relative;
+ 
+}
+.active::after{
+  content: "";
+  display: block;
+  border: 2px solid #2196F3;
+position: relative;
+top:28px
 }
