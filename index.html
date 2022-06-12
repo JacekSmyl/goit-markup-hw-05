@@ -21,13 +21,15 @@
     <header class="flex header-style">
       <div class="container flex">
         <div class="flex">
-          <a class="link-item" href="https://jaceksmyl.github.io/goit-markup-hw-01/"
+          <a
+            class="link-item"
+            href="https://jaceksmyl.github.io/goit-markup-hw-01/"
             ><span class="logo">Web</span
             ><span class="logo-header">Studio</span></a
           >
           <nav class="flex">
             <ul class="nav-style flex">
-              <li><a class="link active " href="index.html">Agencja</a></li>
+              <li><a class="link active" href="index.html">Agencja</a></li>
               <li>
                 <a class="link" href="portfolio.html">Portfolio</a>
               </li>
@@ -55,7 +57,9 @@
       <section class="section-background background-image">
         <div class="title container">
           <h1 class="title-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button" type="button">Zamów usługe</button>
+          <button class="button" type="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
       <section>
@@ -122,8 +126,9 @@
                 src="images/pc.jpg"
                 alt=" ktoś pisze na klawiaturze komutera"
                 width="370"
-                height="294" />
-                <p class="label" >Aplikacje komputerowe</p>
+                height="294"
+              />
+              <p class="label">Aplikacje komputerowe</p>
             </li>
             <li class="label-position">
               <img
@@ -133,7 +138,7 @@
                 height="294"
               />
               <p class="label">Aplikacje mobilne</p>
-            </li >
+            </li>
             <li class="label-position">
               <img
                 src="images/tablet.jpg"
@@ -350,5 +355,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-item">
+            <use href="./images/sprite-close.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
